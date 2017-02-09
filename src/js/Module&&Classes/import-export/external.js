@@ -11,6 +11,15 @@ function test() {
 
 let ab = 'text';
 
+function returnValue() {
+    return {
+        x:1,
+        y:2
+    }
+}
+
+console.log(returnValue())
+
 export { keyValue, test};
 
 export default ab;
