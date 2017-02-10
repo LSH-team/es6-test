@@ -9,7 +9,6 @@
 // let obj2 = {
 //     b: 2
 // };
-//
 // var obj = Object.assign(obj1, obj2);
 //
 // console.log(obj);
@@ -39,6 +38,8 @@
 //
 // console.log('改变对象属性');
 // obj = Object.assign({}, obj1, obj2);
+// obj.a = 2;
+// console.log(obj);
 //
 // console.log(obj.__proto__ === Obj1.prototype);
 // console.log(obj.__proto__ === Obj2.prototype);
@@ -64,4 +65,10 @@ console.log(person.name);
 
 console.log(person.__proto__ === boss);
 
-console.log(person.name);
+console.log('---test----');
+let test = Object.setPrototypeOf({}, boss);
+test = test.__proto__;
+console.log(boss);
+test.name = 'lx';
+console.log(test.name);
+console.log(boss);

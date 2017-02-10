@@ -8,8 +8,11 @@ console.log('----Array.of()-----');
 console.log(array);
 
 console.log('-----Array.from-----');
-let newArray = Array.from(array, val => val * 2);
-
+let newArray = Array.from(array, val => val);
+let arr1 = array;
+arr1[0] = 10;
+newArray[0] = 8;
+console.log(arr1);
 console.log(newArray);
 console.log(array);
 
