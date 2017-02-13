@@ -10,9 +10,9 @@
 // console.log(value);
 // console.log(c);
 
-import * as imported from './external';
+import * as imported from './external.js';
 
 console.log(imported);
 console.log(imported.keyValue);
 imported.test();
-console.log(imported.default)
+console.log(imported.default);
