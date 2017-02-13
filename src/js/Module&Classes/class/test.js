@@ -2,13 +2,13 @@
  * Created by lsh on 17/2/8.
  */
 
-class Helper {
-    static logTwice(message) {
-        console.log(message);
-    }
-}
-
-Helper.logTwice('Logged!');
+// class Helper {
+//     static logTwice(message) {
+//         console.log(message);
+//     }
+// }
+//
+// Helper.logTwice('Logged!');
 
 class Person {
     constructor(name){
@@ -26,7 +26,7 @@ class Person {
 
 class Son extends Person {
     constructor(age) {
-        super('lsh');
+        super('lsh1');
         this.age = age;
     }
 
@@ -41,11 +41,12 @@ class Son extends Person {
 
 }
 
-// let son = new Son(23);
-// son.greet();
-// son.greetTwice();
+let son = new Son(23);
+son.greet();
+son.greetTwice();
+console.log(son);
 
-// console.log(son.__proto__ === Son);
-// console.log(son.__proto__ === Son.prototype);
-// console.log(son.__proto__ === Person.prototype);
+console.log(son.__proto__ === Son);
+console.log(son.__proto__ === Son.prototype);
+console.log(son.__proto__ === Person.prototype);
 
